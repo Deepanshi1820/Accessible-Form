@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Accessible Form UI</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="grid-container">
+
+   <div class="profile">
+    
+
+    <label for="Full Name">Full Name</label>
+    <input type="text" id="Full Name" placeholder="What should we call you?" aria-required="true" autofocus>
+
+    <label for="email">Email</label>
+    <input type="text" id="email" placeholder="hello@abc.com" aria-required="true" aria-describedby="email already taken"/>
+    <span id="email-error" class="error-message" role="alert" aria-live="polite" hidden>
+      Email is already taken.
+    </span>
+
+    <label for="password">Enter Password</label>
+    <div class="password-container">
+    <input type="password" id="password" placeholder="xxxxxxxx" aria-required="true">
+    <span class="toggle-password" id="toggleIcon">👁</span>
+    </div>
+
+    <label for="confirm-password">Confirm Password</label>
+    <div class="password-contain">
+    <input type="password" id="confrim-password" placeholder="xxxxxxxx" aria-required="true" >
+    <span class="confirm-password" id="confirmIcon">👁</span>
+    </div>
+    
+    <input type="button" value="Update Profile">
+    
+
+   </div>
+
+   <div class="profile">
+        
+    <button>65%</button>
+    <p class="complete">Profile Completeness</p>
+
+    <div class="box">
+        <p class="p1">Create Account</p>
+        <p class="p2">Update Roadmap Progress</p>
+        <p class="p3">Setup Public Profile</p>
+        <p>Complete your first project</p>
+        <p>Invite your Friends</p>  
+    </div>
+
+   </div>
+
+
+
+</div>
+    
+</body>
+</html>
