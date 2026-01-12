@@ -12,4 +12,7 @@ Tech Stack Used: HTML & CSS
 + COLOR CONTRAST: WCAG (Web Content Accessibility Guidelines) standards, making the form readable for users with visual impairments.
 + FOCUS STATE: Style the focus state of each input field so that users navigating with a keyboard can easily see which field is currently active.
 + ERROR MESSAGING: Error messages that can be displayed when a user inputs invalid data.
+
+TESTED WITH SCREEN READER:
   
+<img width="1919" height="965" alt="Screenshot 2026-01-12 204042" src="https://github.com/user-attachments/assets/a661ca23-542e-4b69-b306-4cf250066095" />
