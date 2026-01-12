@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Accessible Form UI</title>
+    <title>This is an Accessible Form</title>
     <link href="./style.css" rel="stylesheet">
 </head>
 <body>
 
+<h1>Accessible Form Webpage</h1>
 <div class="grid-container">
 
    <div class="profile">
@@ -15,40 +16,40 @@
     <label for="Full Name">Full Name</label>
     <input type="text" id="Full Name" placeholder="What should we call you?" aria-required="true" autofocus>
 
-    <label for="email">Email</label>
-    <input type="text" id="email" placeholder="hello@abc.com" aria-required="true" aria-describedby="email already taken"/>
-    <span id="email-error" class="error-message" role="alert" aria-live="polite" hidden>
+    <label for="email">Email Id</label>
+    <input type="text" id="email" placeholder="hello@abc.com" aria-required="true" autocomplete="email">
+    <span id="email-error" class="error-message" role="alert">
       Email is already taken.
     </span>
 
-    <label for="password">Enter Password</label>
+    <label for="enter-password">Enter Password</label>
     <div class="password-container">
-    <input type="password" id="password" placeholder="xxxxxxxx" aria-required="true">
-    <span class="toggle-password" id="toggleIcon">👁</span>
+    <input type="password" id="enter-password" placeholder="enter password" aria-required="true" autocomplete="current-password">
+    <span class="toggle-password" id="toggleIcon" role="alert" aria-label="password is hidden right now">👁</span>
     </div>
 
     <label for="confirm-password">Confirm Password</label>
     <div class="password-contain">
-    <input type="password" id="confrim-password" placeholder="xxxxxxxx" aria-required="true" >
-    <span class="confirm-password" id="confirmIcon">👁</span>
+    <input type="password" id="confirm-password" placeholder="confirm password" aria-required="true" autocomplete="new-password" >
+    <span class="confirm-password" id="confirmIcon" role="alert" aria-label="password is hidden right now">👁</span>
     </div>
     
-    <input type="button" value="Update Profile">
+    <input type="button" value="Update Profile" aria-label="press button to update profile">
     
 
    </div>
 
    <div class="profile">
         
-    <button>65%</button>
+    <button aria-label="show current progress of profile">65%</button>
     <p class="complete">Profile Completeness</p>
 
     <div class="box">
-        <p class="p1">Create Account</p>
-        <p class="p2">Update Roadmap Progress</p>
-        <p class="p3">Setup Public Profile</p>
-        <p>Complete your first project</p>
-        <p>Invite your Friends</p>  
+        <p class="p1" aria-label="Create Account completed">Create Account</p>
+        <p class="p2" aria-label="Update Roadmap Progress completed">Update Roadmap Progress</p>
+        <p class="p3" aria-label="Setup Public Profile completed">Setup Public Profile</p>
+        <p aria-label="Complete your first project is not completed">Complete your first project</p>
+        <p aria-label="Invite your Friends is not completed">Invite your Friends</p>  
     </div>
 
    </div>

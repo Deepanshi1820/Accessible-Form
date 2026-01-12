@@ -3,6 +3,11 @@
     margin:0;
 }
 
+h1{
+   margin-left: 90px;
+   margin-top: 10px;
+}
+
 .grid-container{
     display:grid;
     grid-template-columns:200px 250px;
@@ -46,7 +51,7 @@
     position: relative;
 }
 
-#confrim-password{
+#confirm-password{
     position:relative;
 }
 
@@ -114,7 +119,7 @@ input[placeholder]{
 
 .box{
     border-radius: 20px;
-    background-color: rgb(215, 213, 213);
+    background-color: #e1cccc;
     font-size: 15px;
     width:190px;
     height:130px;
@@ -125,7 +130,8 @@ input[placeholder]{
 
 .p1,.p2, .p3{
     text-decoration: line-through;
-    color: grey;
+    color: #563434;
+    font-weight: 200;
 }
 
 .error-message {
